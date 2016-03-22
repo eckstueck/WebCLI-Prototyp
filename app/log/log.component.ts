@@ -15,22 +15,23 @@ export class WebCliLogComponent implements OnInit {
   settings: Settings;
 
   constructor(private _restService: RESTService,
-              private _comunicationService: CommunicationService){}
+              private _comunicationService: CommunicationService){
+                this.settings = new Settings(1000,5000,50,true);
+                this._comunicationService.refreshRunning.subscribe(
+                  refreshRunning => {
+                    this.refreshRunning = refreshRunning;
+                    clearTimeout(this.timeout);
+                    if (refreshRunning) {
+                      this.startGetLog();
+                    }
+                  }
+                );
+                this._comunicationService.settings.subscribe(
+                  settings => this.settings = settings
+                );
+              }
 
   ngOnInit() {
-    this.settings = new Settings(1000,5000,50,true);
-    this._comunicationService.refreshRunning.subscribe(
-      refreshRunning => {
-        this.refreshRunning = refreshRunning;
-        clearTimeout(this.timeout);
-        if (refreshRunning) {
-          this.startGetLog();
-        }
-      }
-    );
-    this._comunicationService.settings.subscribe(
-      settings => this.settings = settings
-    );
   }
 
   startGetLog() {

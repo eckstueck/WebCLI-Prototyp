@@ -28,3 +28,7 @@ web-cli-log > .row > .web-cli-log{
   width: 100%;
   margin: 0;
 }
+
+#exCollapsingNavbar .row {
+  padding: 5px;
+}
