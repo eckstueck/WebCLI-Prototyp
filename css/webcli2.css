@@ -1,0 +1,30 @@
+#command-input {
+  padding: 10px;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+web-cli-log > .row {
+  padding: 12px;
+  padding-bottom: 0;
+}
+
+web-cli-log > .row > .web-cli-log{
+  height: calc(100% - 122px);
+  overflow: auto;
+}
+
+#web-cli-header {
+  height: 110px;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}

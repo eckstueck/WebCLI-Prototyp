@@ -1,0 +1,63 @@
+{
+  "commands": [{
+    "name": "Access Commands",
+    "commands": ["delete all permissions", "delete all permissions for id {1}", "delete all permissions for selected", "delete permission {0}", "delete permission {0} for id {1}", "delete permission {0} for selected", "export all permissions to file {0}", "list all permissions", "load permissions data from file {0}", "set website read only", "set website read only {0}", "unset website read only", "update permission {0} for id {1} with rulefile {2}", "update permission {0} for id {1} with rulefile {2} described by {3}", "update permission {0} for selected with rulefile {1}", "update permission {0} for selected with rulefile {1} described by {2}"]
+  }, {
+    "name": "Basic commands",
+    "commands": ["cancel on error", "process {0}", "show command statistics", "skip on error"]
+  }, {
+    "name": "Classification Commands",
+    "commands": ["check all classifications", "check classification {0}", "count classification children of {0}", "delete classification {0}", "export all classifications to directory {0} with {1}", "export classification {0} to directory {1} with {2}", "list all classifications", "list classification {0}", "load all classifications from directory {0}", "load classification from file {0}", "load classification from url {0}", "repair category with empty labels", "repair left right values for classification {0}", "repair position in parent", "update all classifications from directory {0}", "update classification from file {0}", "update classification from url {0}"]
+  }, {
+    "name": "Classification Tools",
+    "commands": ["import export classification {0} {1,number,integer}", "repair category with empty labels", "repair left right values for classification {0}", "repair position in parent"]
+  }, {
+    "name": "IFS Maintenance",
+    "commands": ["check derivates of mcrfsnodes with project id {0}", "check mcrfsnodes of derivates with project id {0}", "delete ifs node {0}", "generate md5 file report in directory {0}", "generate md5sum files in directory {0}", "generate missing file report in directory {0}", "generate missing nodes report in directory {0}", "move derivates from content store {0} to content store {1} for filetype {2}", "move derivates from content store {0} to content store {1} for owner {2}", "repair content length for mcrrev 30327", "repair directory sizes of derivate {0}"]
+  }, {
+    "name": "IFS2 Maintenance",
+    "commands": ["check mcrfsnodes of content store {0} for derivate {1}", "check mcrfsnodes of content store {0} for project id {1}", "repair mcrdata.xml in content store {0} for derivate {1}", "repair mcrdata.xml in content store {0} for project id {1}", "repair mcrfsnodes of content store {0} for derivate {1}", "repair mcrfsnodes of content store {0} for project id {1}"]
+  }, {
+    "name": "JP Commands",
+    "commands": ["add derivate link {0} to object {1}", "addDerivate {0} {1}", "copy file {0} {1}", "copy object {0}", "export object {0} to file {1}", "import object from file {0}", "mkdir {0}", "move {0} {1}", "remove dead links", "rename {0} {1}"]
+  }, {
+    "name": "JP Migrating Commands",
+    "commands": ["fix colone in categID", "migrate imprint", "migrate intro xml", "migrate template", "set intro prop"]
+  }, {
+    "name": "JP Object Commands",
+    "commands": ["add derivates {0} to object {1}", "collapse {0}", "cp {0}", "cp(n) {0} {1,number,integer}", "export import object {0}", "export object recursiv from {0} to {1}", "exportDerivates from {0} to {1}", "fix hidden journal id for {0}", "internal fix hidden journal id for {0} {1}", "layer collapse {0} {1}", "merge derivates {0}", "move file {0} to {1}", "remove derivate links of object {0} of derivate {1}", "select from file {0}", "set derivate link to {0} with path {1}"]
+  }, {
+    "name": "JP doubletOf Commands",
+    "commands": ["fix title of {0} for link {1}", "internal replace links and remove {0} {1}", "internal replace links {0} {1} {2}", "jp clean up {0}"]
+  }, {
+    "name": "Jportal Importer",
+    "commands": ["importObj {0} {1}"]
+  }, {
+    "name": "Law Commands",
+    "commands": ["law import {0}"]
+  }, {
+    "name": "Logging",
+    "commands": ["change log level of {0} to {1}"]
+  }, {
+    "name": "MCR Derivate Commands",
+    "commands": ["check object entries in derivates for base {0}", "delete all derivates", "delete derivate from {0} to {1}", "delete derivate {0}", "export all derivates of project {0} to directory {1} with {2}", "export all derivates to directory {0} with {1}", "export derivate from {0} to {1} to directory {2} with {3}", "export derivate {0} to directory {1} with {2}", "link derivate {0} to {1}", "load all derivates from directory {0}", "load derivate from file {0}", "repair derivate search of ID {0}", "repair derivate search of type derivate", "show loadable derivate of {0} to directory {1}", "synchronize all derivates", "synchronize derivate with ID {0}", "update all derivates from directory {0}", "update derivate from file {0}"]
+  }, {
+    "name": "MCR IView2 Tile Commands",
+    "commands": ["check tiles of all derivates", "check tiles of derivate {0}", "check tiles of derivates of project {0}", "check tiles of image {0} {1}", "delete all tiles", "delete tiles of derivate {0}", "delete tiles of image {0} {1}", "delete tiles of object {0}", "start tile webservice on {0}", "stop tile webservice", "tile image {0} {1}", "tile images of all derivates", "tile images of derivate {0}", "tile images of derivates of project {0}", "tile images of object {0}"]
+  }, {
+    "name": "MCR Mets Commands",
+    "commands": ["add mets files for derivate {0}", "add mets files for project id {0}", "try fix invalid mets", "validate selected mets"]
+  }, {
+    "name": "MCR SOLR Commands",
+    "commands": ["create solr metadata and content index at {0}", "delete from solr index by id {0}", "delete from solr index for type {0}", "drop solr classification index", "drop solr index", "optimize solr index", "rebuild solr classification index", "rebuild solr content index", "rebuild solr metadata and content index", "rebuild solr metadata index", "restricted rebuild solr content index for selected", "restricted rebuild solr metadata index for object {0}", "restricted rebuild solr metadata index for objecttype {0}", "restricted rebuild solr metadata index for selected", "restricted synchronize metadata index for objecttype {0}", "select objects with solr query {0}", "set solr server {0}", "synchronize metadata index"]
+  }, {
+    "name": "MCR User Commands",
+    "commands": ["assign user {0} to role {1}", "change to user {0} with {1}", "delete role {0}", "delete user {0}", "disable user {0}", "enable user {0}", "encrypt passwords in user xml file {0} to file {1}", "export all users to directory {0}", "export role {0} to directory {1}", "export user {0} to file {1}", "import all users from directory {0}", "import role from file {0}", "import user from file {0}", "init superuser", "list all roles", "list all users", "list role {0}", "list user {0}", "login {0}", "set password for user {0} to {1}", "unassign user {0} from role {1}", "update all users from directory {0}", "update user from file {0}"]
+  }, {
+    "name": "MCRObject Commands",
+    "commands": ["check derivate entries in objects for base {0}", "delete all objects of type {0}", "delete object from {0} to {1}", "delete object {0}", "execute for selected {0}", "export all objects of base {0} to directory {1} with {2}", "export all objects of type {0} to directory {1} with {2}", "export object from {0} to {1} to directory {2} with {3}", "export object {0} to directory {1} with {2}", "get last ID for base {0}", "get next ID for base {0}", "list revisions of {0}", "list selected", "load all objects from directory {0}", "load all objects in topological order from directory {0}", "load object from file {0}", "repair metadata search of ID {0}", "repair metadata search of type {0}", "restore {0} to revision {1,number,integer}", "set parent of {0} to {1}", "update all objects from directory {0}", "update all objects in topological order from directory {0}", "update object from file {0}", "xslt {0} with file {1}"]
+  }, {
+    "name": "User Group Tools",
+    "commands": ["add {0} to {1}"]
+  }]
+}

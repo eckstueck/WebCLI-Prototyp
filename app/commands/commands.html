@@ -1,0 +1,6 @@
+<li *ngFor="#command of commandList" class="dropdown-submenu">
+  <a class="dropdown-item" href="#">{{command.name}}</a>
+  <ul class="dropdown-menu" *ngIf="command.commands">
+    <li *ngFor="#com of command.commands"><a class="dropdown-item" href="#" (click)="onSelect(com)">{{com}}</a></li>
+  </ul>
+</li>

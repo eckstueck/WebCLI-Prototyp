@@ -1,0 +1,32 @@
+<div class="collapse" id="exCollapsingNavbar">
+  <div class="bg-inverse p-a-1">
+    <!-- <div class="form-inline"> -->
+      <div class="form-group row">
+        <label class="form-control-label col-xs-2">Log refresh rate:</label>
+        <div class="input-group col-xs-2">
+          <input type="text" class="form-control" [(ngModel)]="settings.logRefreshRate">
+          <span class="input-group-addon" id="basic-addon2">ms</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="form-control-label col-xs-2">Command queue refresh rate:</label>
+        <div class="input-group col-xs-2">
+          <input type="text" class="form-control" [(ngModel)]="settings.queueRefreshRate">
+          <span class="input-group-addon" id="basic-addon2">ms</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="form-control-label col-xs-2">Log History Size:</label>
+        <div class="col-xs-2">
+          <input type="text" class="form-control" [(ngModel)]="settings.historySize">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="form-control-label col-xs-2">AutoScroll Logs:</label>
+        <div class="col-xs-2">
+           <input type="checkbox" [(ngModel)]="settings.autoscroll">
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>
